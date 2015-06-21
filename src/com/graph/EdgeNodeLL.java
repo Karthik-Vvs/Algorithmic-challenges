@@ -13,10 +13,10 @@ public class EdgeNodeLL {
     EdgeNode first;
     EdgeNode last;
     public void put(int y,int weight){        
-            EdgeNode oldfirst=first;
-            first=new EdgeNode(y,weight);
-            if(last==null)last=first;
-            first.next=oldfirst;
+        EdgeNode oldfirst=first;
+        first=new EdgeNode(y,weight);
+        if(last==null)last=first;
+        first.next=oldfirst;
     }
     public int getY(){
         int y=first.y;        
@@ -24,7 +24,7 @@ public class EdgeNodeLL {
     }
     public int getWeight(){
         int weight=first.weight;
-       return weight;
+        return weight;
     }
     
     public boolean isEmpty(){
